@@ -10,7 +10,7 @@
 
 2주차 
 
-train과 test는 데이터의 범주가 비슷해야한다. 
+train과 test는 데이터의 범주가 비슷해야한다. 편향이 일어나서는 안된다.
 Generalization 데이터 일반화
 
 ai의 핵심: 주어진 데이터의 weight와 biac의를 파악하여 새로운 데이터에도 적용시키는 것
