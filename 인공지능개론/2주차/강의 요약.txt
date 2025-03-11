@@ -10,7 +10,7 @@
 
 2주차 
 
-train과 test는 데이터의 범주가 비슷해야한다.
+train과 test는 데이터의 범주가 비슷해야한다. 
 Generalization 데이터 일반화
 
 ai의 핵심: 주어진 데이터의 weight와 biac의를 파악하여 새로운 데이터에도 적용시키는 것
@@ -39,8 +39,18 @@ from sklearn.preprocessing import Labelencoder
 특적 칼럼 삭제 소스코드
 df=df.drop('칼럼 명', axis=0/1(축방향))
 
-실습
-(csv/xlsx, 웹주소/로컬파일 읽기
-특정칼럼 삭제
-인코딩)
+실습 with titanic.csv,combined_dataset-1.xlsx
+(csv/xlsx, 웹주소/로컬파일 읽기, 특정칼럼 삭제,인코딩)
+
+데이터에 결측치가 있는지 확인하기
+df.isnull()
+
+imbalanced data인지 미리 확인, 엔코딩 전/후 확인
+df['label'].value.countes()
+
+
+데이터가 들어왔을 때   ***과제*** titanic 데이터로 해보기
+데이터 로딩 → 결측치 확인 → 결측치 제거 → 레이블 확인(imbalaced data)
+→ 불필요한 컬럼 제거 → 엔코딩(숫자화) → 5가지 분류
+
 
