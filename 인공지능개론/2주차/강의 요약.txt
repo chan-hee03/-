@@ -20,8 +20,8 @@ k-means : unsupervised(비지도), 그룹화하려는 목적
 leg_arms: 알고리즘의 성능 상승 정도가 완만해지는 지점
 
 numpy와 pandas's datagram
-numpy는 배열(array)형태, 속도 빠름
-pandas는 엑셀형태, 데이터조작이 쉬움, 속도 느림
+numpy: 배열(array)형태, 속도 빠름
+pandas: 엑셀형태, 데이터조작이 쉬움, 속도 느림
 column이 있느냐 없느냐 차이
 딥러닝을 하기 위해서는 배열 형태로 데이터를 넣어줘야 한다.
 
