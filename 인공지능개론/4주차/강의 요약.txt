@@ -47,3 +47,6 @@ hyperparameter tunning : 좋은 ai를 얻기 위해 hyperparameter를 조절하�
 Sequential()
 model.add(Dense(10,input_shape=(13,),activation='relu'))
 시그모이드 소프트맥스 캐텀우ㅏ스트리ㅓ문ㅇ??
+
+
+하이퍼파라미터 튜닝 해보기
