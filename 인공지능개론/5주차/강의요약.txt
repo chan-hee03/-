@@ -1,1 +1,33 @@
+1. forward propagation
 
+2. backward propagation
+최종출력의 lossfunction을 기준으로 w와 b 값을 조정하는 것
+3. loss function
+출력값과 실제값의 차이
+4. optimizer
+경사하강법 : 함수의 최솟값을 찾기 위해 반복하여 최적화하는 알고리즘
+w(i+1)=w(i)-r(학습률)*G그래디언트
+
+5. actiration function
+특성공학을 통해 특성을 추출 할 때
+데이터가 선형적이면 늘어도 도움이 안됨
+때문에 특성추출 후 비선형성을 줌
+주교재 197p
+
+
+backward propagation 중에 그래디언트를 반영하면서 기울기가 소실되는 부분
+gradient vanishing ~~~
+
+
+경사하강법 : 가중치 최적화 알고리즘
+adadelta 
+
+전체 경사하강법
+
+확률적 경사하강법
+데이터를 한번에 학습시킬 수 없으니 임의의 데이터들을 선점한 후 경사하강법 적용
+
+배치 경사하강법
+
+분류 : accrucy
+회귀 m: bdr
