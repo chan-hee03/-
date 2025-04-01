@@ -40,7 +40,10 @@ accrucy 데이터의 불균형을 반영하지 못함
 뜻 확인
 recall
 precision
+f1-score
 sensitivity
+ROC-AUC
+specivity 특이도
 
 퍼셉트론
 퍼셉트론의 한계
