@@ -1,4 +1,5 @@
 1. forward propagation
+입력 데이터가 신경망에 들어가 출력 결과를 계산하는 과정
 
 2. backward propagation
 최종출력의 lossfunction을 기준으로 w와 b 값을 조정하는 것
@@ -8,10 +9,11 @@
 경사하강법 : 함수의 최솟값을 찾기 위해 반복하여 최적화하는 알고리즘
 w(i+1)=w(i)-r(학습률)*G그래디언트
 
-5. actiration function
+5. activation function
 특성공학을 통해 특성을 추출 할 때
 데이터가 선형적이면 늘어도 도움이 안됨
 때문에 특성추출 후 비선형성을 줌
+ex) 시그모이드, ReLU
 주교재 197p
 
 
@@ -38,12 +40,25 @@ adadelta
 accrucy 데이터의 불균형을 반영하지 못함
 
 뜻 확인
-recall
-precision
-f1-score
-sensitivity
-ROC-AUC
-specivity 특이도
+Confusion Matrix : 혼돈행렬
+            실제 값(1)    실제값(0)
+예측값(1)      TP            FP
+예측값(0)      FN            TN
+정답 예상은 Positive, 0예상은 Negative
+예측 맞으면 Positive, 틀리면 False
+
+precision 정밀도 :  정답으로 예측한 값들 중 실제 정답인 값 비율  TP/(TP+FP)
+recall, sensitivity 재현율, 민감도 : 정답인것들 중에서 맞게 예측한 비율 TP/(TP,FN)
+f1-score 조화평균 : Precision과 Recall 사이 균형을 나타냄 2*Precision*Recall/Precision+Recall
+specivity 특이도 : 0으로 예측한 값들 중 실제 0인값 비율 TN/(TN+FP)
+ROC-AUC : 모든 분류 임계값(threshold)에 대해, 모델의 성능을 그래프로 나타낸 것
+  threshold 분류임계값 : 받은 예측 확률을 Positive와 negative로 구분할 기준점
+  ROC(Receiver Operating Characteristic Curve) : 
+    x축은 FPR(1-specivity) y축은 TPR(recall)
+  AUC(Area Under the Curve) : ROC 정적분한 값 0<AUC<1
+                              0.5에 가까울수록 랜덤에 가까움, 멀어질수록 좋은 모델
+                              0에 가깝다면 반대로 예측중이므로 모델을 뒤집으면 나아짐
+
 
 퍼셉트론
 퍼셉트론의 한계
