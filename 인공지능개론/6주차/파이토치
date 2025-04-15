@@ -1,0 +1,8 @@
+출력층 노드 수/출력 함수/손실 함수/출력 예시
+회귀: 1 / 없음(Linear) / nn.MSELoss() / tensor([87.3])
+이진 분류: 1	/ Sigmoid	/ nn.BCELoss() or nn.BCEWithLogitsLoss() / tensor([0.86])
+다중 분류: 클래스 수 / Softmax or 없음	/ nn.CrossEntropyLoss() /	tensor([0.2, 0.3, 0.5])
+
+이진분류의 손실함수 차이
+nn.BCELoss() : 모델 안에 sigmoid 필요
+nn.BCEWithLogitsLoss : sigmoid 내장됨, sigmoid 필요 x
