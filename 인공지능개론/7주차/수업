@@ -10,6 +10,17 @@ f1 임벨런스확인 목적
 
 클래스 갯수의 비중 x 매크로, 감안한게 weighted
 
+barplot
+boxplot
+violinplot
+countplot
+pie
+heatmap
+scatterplot
+
+
+
+
 시험
 자세한 설명 중요
 육하원칙에 맞춰서 실제 예시를 들어가며 설명
