@@ -20,5 +20,16 @@ data augmentation: 한정된 데이터에서 여러가지 변형된 데이터를
   fine 튜닝 : 이미 학습된부분은 프리징시켜둠, 모델의 일부만 풀어서 학습
 
 
-llm은 입력과 출력이 text
-imvading필요
+lnn은 입력과 출력이 text
+invading필요
+
+
+dense 셀의 공간적 관계 생각 안함
+
+cnn은 현재의 스냅샷만 파악, 공간적 관계 파악함
+영상은 지속적인 변화를 파악해야 함
+rnn,lnn
+split sequence : 슬라이드 방식으로 미루면서 합치면 서로의 관련성을 포하하면서 특성 수를 감소시킴, 회귀에 사용가능
+
+
+당뇨병환자 cnn, split seauence
