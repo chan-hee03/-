@@ -42,6 +42,10 @@ LSTM : Rnn의 gradiant vanishing 해결 목적, 장/단기 메모리
 
   여전히 gradiant vanishing가 일부 일어남, 느림
 
+
+
+aame
+mse
 GRU : 속도를 개선함
 
 
