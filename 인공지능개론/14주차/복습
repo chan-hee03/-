@@ -1,0 +1,15 @@
+순환 신경망
+MLP (FC, DENSE) : wx + b
+특성들 간의 상관관계 고려 x (픽셀)
+
+CNN (공간, 시간관계 고려)
+mulple (wx + b )
+시간적 관계 고려 못함 
+
+순환데이터
+x, y를 다시 생성 (sliding window)
+
+RNN
+Gradient Vanishing Problem 그래디언트 손실 문제
+
+LSTM
